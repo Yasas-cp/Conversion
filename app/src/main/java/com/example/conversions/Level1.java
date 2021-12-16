@@ -27,8 +27,8 @@ public class Level1 extends AppCompatActivity {
     private final int countPair=0;
 
 
-    int[] randomArray;
-    int pos[] = {m,n,o,p};
+    int randomArray[] = {m,n,o,p};
+    int pos[] = {0,1,2,3};
     int currentpos = -1;
     Random random = new Random();
     int value = random.nextInt(100);
@@ -94,21 +94,27 @@ public class Level1 extends AppCompatActivity {
     });
     }
 
-    private List<Integer> randomArray(int[] pos) {
+    private List<Integer> randomArray(int[] a) {
 
         List<Integer> list=new ArrayList<>();
-        int x = (value/2);
-        if (pos = m){
-
+        for(int i=0; i<randomArray.length;i++)
+        {
+            int x = (value/2);
+            if (a = m){
+                
+            }
+            if (a = n){
+                list.add(x);
+            }
+            if (a = o){
+                list.add(x);
+            }
+            if (a = p){
+                int f = 82;
+                list.add(f);
+            list.add(4);
+            return list;
         }
-        if (pos = n){
-            list.add(x);
-        }
-        if (pos = o){
-            list.add(x);
-        }
-        list.add(4);
-        return list;
     }
 
 }
